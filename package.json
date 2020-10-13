@@ -1,0 +1,23 @@
+{
+  "name": "dear_be",
+  "version": "1.0.0",
+  "description": "The Backbone Server serves Metadatas for DeBear NFT Cards",
+  "main": "app.js",
+  "repository": "https://github.com/nekomeowww/dear_be",
+  "author": "Ayaka Neko <neko@ayaka.moe>",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-router": "^9.4.0",
+    "koa-static": "^5.0.0",
+    "log4js": "^6.3.0",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node_modules/.bin/nodemon --harmony app.js --dev",
+    "test": "node app.js --test",
+    "conf": "node test/init.js"
+  }
+}
