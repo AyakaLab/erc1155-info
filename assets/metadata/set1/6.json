@@ -1,0 +1,24 @@
+{
+	"name": "GirlColle 6",
+	"description": "Cards of GirlColle",
+	"image": "https:\/\/api.ayaka.moe\/dear\/images\/set6\/6.png",
+	"properties": {
+		"simple_property": "grilcolle card 6",
+		"rich_property": {
+			"name": "GirlColle",
+			"value": "6",
+			"display_value": "GirlColle 6",
+			"class": "dear-dev",
+			"css": {
+				"color": "#ffffff",
+				"font-weight": "bold",
+				"text-decoration": "none"
+			}
+		},
+		"array_property": {
+			"name": "GirlColle",
+			"value": [1,2,3,4,5,6],
+			"class": "dear-dev"
+		}
+	}
+}
