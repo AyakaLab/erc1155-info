@@ -1,7 +1,7 @@
 {
 	"name": "GirlColle 2",
 	"description": "Cards of GirlColle",
-	"image": "https:\/\/api.ayaka.moe\/dear\/images\/set2\/2.png",
+	"image": "https:\/\/api.ayaka.moe\/dear\/image\/set2\/2.png",
 	"properties": {
 		"simple_property": "grilcolle card 2",
 		"rich_property": {
