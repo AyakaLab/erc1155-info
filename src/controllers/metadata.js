@@ -1,9 +1,6 @@
 // Dependencies
 const fs = require('fs')
 
-// Local Packages
-const Log = require('../util/log')
-
 let Metadata = {
     async getMetadata (ctx, next) {
         if (!ctx.params.id || !ctx.params.set) {
