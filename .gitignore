@@ -105,3 +105,5 @@ dist
 
 # configuration file
 config.json
+
+.DS_Store
