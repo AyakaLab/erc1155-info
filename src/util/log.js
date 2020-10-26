@@ -3,7 +3,7 @@ const log4js = require("log4js")
 
 let SysTime = new Date()
 let logTime = SysTime.getFullYear() + "-" + ("0" + (SysTime.getMonth() + 1)).slice(-2) + "-" + ("0" + SysTime.getDate()).slice(-2)
-const coreLogFileName = `./logs/DeBearBE-${logTime}.log`
+const coreLogFileName = `./logs/ERC1155Info-${logTime}.log`
 
 log4js.configure({
     appenders: {
@@ -11,35 +11,35 @@ log4js.configure({
         console: { type: "console" }
     },
     categories: {
-        DeBearBE: { appenders: ["console", "Core"], level: "trace" },
+        ERC1155Info: { appenders: ["console", "Core"], level: "trace" },
         default: { appenders: ["console"], level: "trace" }
     }
 })
 
-let DeBearBELogger = log4js.getLogger("DeBearBE")
+let ERC1155InfoLogger = log4js.getLogger("ERC1155Info")
 
 function info(log) {
-    DeBearBELogger.info(log)
+    ERC1155InfoLogger.info(log)
 }
 
 function trace(log) {
-    DeBearBELogger.trace(log)
+    ERC1155InfoLogger.trace(log)
 }
 
 function debug(log) {
-    DeBearBELogger.debug(log)
+    ERC1155InfoLogger.debug(log)
 }
 
 function warning(log) {
-    DeBearBELogger.warn(log)
+    ERC1155InfoLogger.warn(log)
 }
 
 function fatal(log) {
-    DeBearBELogger.fatal(log)
+    ERC1155InfoLogger.fatal(log)
 }
 
 function level(lev) {
-    DeBearBELogger.level = lev
+    ERC1155InfoLogger.level = lev
 }
 
 module.exports = {

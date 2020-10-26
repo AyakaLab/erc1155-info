@@ -17,6 +17,7 @@ const koaBody = require('koa-body')
 // Local Packages
 const Log = require('./src/util/log')
 const Global = require('./src/util/global')
+const Init = require('./init')
 const routers = require('./src/route/router')
 let config = undefined
 try {
@@ -28,6 +29,8 @@ catch(e) {
     err.name = 'Configuration Error'
     throw err
 }
+
+Init()
 
 let app = new Koa()
 app.proxy = true
