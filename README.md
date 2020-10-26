@@ -4,7 +4,6 @@
 <p align="center">
 <img src="https://github.com/AyakaLab/erc1155-info/workflows/Dev%20Test/badge.svg" />
 <img src="https://github.com/AyakaLab/erc1155-info/workflows/Production%20CI%20Test/badge.svg" />
-<img src="https://github.com/AyakaLab/erc1155-info/workflows/Production%20Deployment/badge.svg" />
 </p>
 
 > We aim to build a general ERC1155 metadata server that you can quickly deploy into all different project and aspect
