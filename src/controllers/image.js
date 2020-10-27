@@ -24,7 +24,7 @@ let Image = {
             webp: 'image/webp',
         }
     
-        if (types[ext]) {
+        if (!types[ext]) {
             ctx.status = 406
             ctx.body = { status: -1, message: 'unsupported type requested' }
         }
