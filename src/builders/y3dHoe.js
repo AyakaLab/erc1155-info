@@ -78,7 +78,7 @@ const HoeBuilder = {
             attr.push(MetadataBuilder.attributesBuilder('Name_CHN', item.nameZhCN))
 
             let body = MetadataBuilder.builder(
-                config.publicUrl + '/' + item.id,
+                config.publicUrl + '/metadata/' + item.id,
                 item.image,
                 item.name,
                 '',
