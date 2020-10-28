@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "dev": "node_modules/.bin/nodemon --harmony app.js --ignore 'assets/metadata/*' --dev",
+    "dev": "node_modules/.bin/nodemon --harmony app.js --ignore 'assets/*' --dev",
     "test": "node app.js --test",
     "conf": "node test/init.js"
   }

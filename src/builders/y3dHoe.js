@@ -5,6 +5,7 @@ const path = require('path')
 // Local Packages
 const Log = require('../util/log')
 const MetadataBuilder = require('../generator/metadataBuilder')
+const ContractInfoBuilder = require('../generator/contractInfoBuilder')
 
 const config = require('../../config.json')
 
@@ -85,6 +86,10 @@ const HoeBuilder = {
             const location = MetadataBuilder.toJsonFile('set1', item.id, body)
             Log.trace(`Built JSON metadata for ${item.name} (id: ${item.id}) to ${location}`)
         }
+
+        const contractInfo = ContractInfoBuilder.builder('Y3DScam NFT', '', hoeArray[0].image, config.publicUrl + '/contract/set1/y3dset1-nft')
+        const location2 = ContractInfoBuilder.toJsonFile('set1', 'y3dset1-nft', contractInfo)
+        Log.trace(`Built JSON contract info for Y3DScam NFT to ${location2}`)
     }
 }
 
