@@ -63,11 +63,9 @@ const hoeArray = [
 
 const HoeBuilder = {
     initItems() {
-        const metdadataDir = path.resolve('./assets/metadata')
         
         for (let i = 0; i < hoeArray.length; i++) {
             const item = hoeArray[i]
-            if (fs.existsSync(path.join(metdadataDir, item.id + '.json'))) return
 
             let attr = []
             attr.push(MetadataBuilder.attributesBuilder('Level', item.level))
@@ -78,13 +76,13 @@ const HoeBuilder = {
             attr.push(MetadataBuilder.attributesBuilder('Name_CHN', item.nameZhCN))
 
             let body = MetadataBuilder.builder(
-                config.publicUrl + '/metadata/' + item.id,
+                config.publicUrl + '/metadata/set1/' + item.id,
                 item.image,
                 item.name,
                 '',
                 attr
             )
-            const location = MetadataBuilder.toJsonFile('', item.id, body)
+            const location = MetadataBuilder.toJsonFile('set1', item.id, body)
             Log.trace(`Built JSON metadata for ${item.name} (id: ${item.id}) to ${location}`)
         }
     }
